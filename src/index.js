@@ -2,7 +2,7 @@ import _ from 'lodash';
 import './style.css';
 
 
-  const load = () => {
+  const hardLoadedContent = () => {
     const scoreBoard= document.getElementById('update');
     const addScore = document.getElementById('add');
     const recentContent = `<div class="title-container">
@@ -36,4 +36,4 @@ import './style.css';
   };
   
 
-  window.addEventListener('DOMContentLoaded', load);
+  window.addEventListener('DOMContentLoaded', hardLoadedContent);
