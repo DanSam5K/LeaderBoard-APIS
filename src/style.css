@@ -15,12 +15,12 @@ li {
   list-style-type: none;
   width: 100%;
   background-color: white;
-  margin: 0;
+  margin: 1px;
 }
 
 p {
   padding: 10px 15px;
-  margin: 0;
+  margin: 1px;
 }
 
 h1 {
@@ -69,7 +69,7 @@ input {
 .submit-button {
   width: 20%;
   margin-left: auto;
-  margin-top: 0px;
+  margin-top: 1px;
 }
 
 .list {
