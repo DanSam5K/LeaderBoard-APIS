@@ -15,7 +15,7 @@
 - Git & Github
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://github.com/DanSam5K/LeaderBoard-APIS/tree/basic-page)
 
 
 ### Prerequisites
@@ -33,6 +33,7 @@ To get a local copy up and running follow these simple example steps.
 - Open terminal
 - Clone this project by the command `git clone https://github.com/DanSam5K/LeaderBoard-APIS.git`
 - `cd <clone>` folder
+- Run `npm install` to install all project dependencies
 - Run `npm start` in your local browser or using Live Server in Visual Studio Code.
 
 ## Author
