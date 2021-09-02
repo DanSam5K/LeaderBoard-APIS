@@ -31,3 +31,23 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
+const getData = async () => {
+  const refreshData = await fetch(leaderData);
+  const refreshJsonData = await refreshData.json();
+  return refreshJsonData;
+};
+
+refreshBtn.addEventListener('click', () => {
+  getData().then((data) => {
+    displayGame.innerHTML = '';
+    data.result.forEach((data) => {
+      const gameList = document.createElement('li');
+      gameList.classList.add('flex', 'border');
+      const gamerData = document.createElement('p');
+      gamerData.innerHTML = `${data.user}: ${data.score}`;
+      gameList.appendChild(gamerData);
+      displayGame.appendChild(gameList);
+    });
+  });
+});
+
