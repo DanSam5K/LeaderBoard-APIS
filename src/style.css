@@ -6,21 +6,18 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: white;
   width: 80%;
   margin: 30px auto 0;
 }
 
 li {
-  list-style-type: none;
-  width: 100%;
+  width: 70%;
   background-color: white;
-  margin: 1px;
 }
 
 p {
   padding: 10px 15px;
-  margin: 1px;
 }
 
 h1 {
@@ -34,12 +31,14 @@ main {
 
 input {
   margin-bottom: 15px;
-  padding: 5px 10px;
+  padding: 5px 0;
   border-radius: 5px;
 }
 
 .scores,
 .add-scores {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 60vh;
   margin: 40px;
@@ -51,11 +50,36 @@ input {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 15px;
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.list {
+  border: 1px solid black;
+  overflow-y: scroll;
+  height: 50vh;
+  width: 100%;
+}
+
+.list li:nth-child(odd) {
+  background: #3b4752;
+  color: #fff;
+  width: 98%;
+}
+
+.display li:nth-child(even) {
+  background: #fff;
+  color: #3b4752;
+  width: 98%;
 }
 
 .add-title {
   margin-left: 50px;
+}
+
+.input-name,
+.input-score {
+  padding: 5px;
 }
 
 .form {
@@ -66,13 +90,9 @@ input {
   padding: 10px;
 }
 
-.submit-button {
+.submit-button,
+.refresh-button {
   width: 20%;
   margin-left: auto;
-  margin-top: 1px;
-}
-
-.list {
-  border: 1px solid #0a0909;
-  overflow-y: scroll;
+  margin-top: 2px;
 }
