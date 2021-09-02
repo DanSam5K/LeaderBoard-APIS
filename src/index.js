@@ -1,37 +1,25 @@
-import _ from 'lodash';
+import _ from 'lodash';// eslint-disable-line
 import './style.css';
+const displayGame = document.querySelector('.list');
+const form = document.querySelector('.form');
+const username = document.querySelector('.input-name');
+const userscore = document.querySelector('.input-score');
+const refreshBtn = document.querySelector('.refresh-button');
 
-const hardLoadedContent = () => {
-  const scoreBoard = document.getElementById('update');
-  const addScore = document.getElementById('add');
-  const recentContent = `<div class="title-container">
-      <h2 class="recent-title">Recent Scores</h2>
-      <button class="submit-button">Refresh</button>
-    </div>
-    <ul class="list">
-      <li id="1"><p>Wisdom: 10</p></li>
-      <li id="2"><p>Faithfulness : 300</p></li>
-      <li id="3"><p>Self control : 10</p></li>
-      <li id="4"><p>Passion : 100</p></li>
-      <li id="5"><p>Beauty : 10</p></li>
-      <li id="6"><p>Power: 80</p></li>
-    </ul>`;
-  const addContent = `<div class="title-container">
-      <h2 class="add-title">Add Your Score</h2>
-    </div>
-    <form class="form">
-      <input class="input-name" type="text" placeholder="Your Name">
-      <input class="input-score" type="text" placeholder="Your Score">
-      <button class="submit-button" type="submit">Submit</button>
-    </form>`;
-  scoreBoard.innerHTML = recentContent;
-  addScore.innerHTML = addContent;
-  const UserList = document.querySelectorAll('li');
-  UserList.forEach((item) => {
-    if ((item.id % 2) !== 0) {
-      item.style.backgroundColor = '#d0c9c3';
-    }
-  });
+const leaderData = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fOiEcJqrUPnT8bykVBXu/scores/';
+
+const postData = async (gamerName, gamerScore) => {
+  const response = await fetch(leaderData, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      user: gamerName,
+      score: gamerScore,
+    }),
+  })
+    .then((res) => res.json());
+  return response;
 };
 
-window.addEventListener('DOMContentLoaded', hardLoadedContent);
