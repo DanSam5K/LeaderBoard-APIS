@@ -23,3 +23,11 @@ const postData = async (gamerName, gamerScore) => {
   return response;
 };
 
+form.addEventListener('submit', (e) => {
+  const usernameValue = username.value;
+  const userscoreValue = userscore.value;
+  e.preventDefault();
+  postData(usernameValue, userscoreValue);
+  form.reset();
+});
+
