@@ -52,3 +52,6 @@ const refreshScores = () => {
   });
 }
 
+refreshBtn.addEventListener('click', refreshScores);
+
+window.onload = refreshScores;
