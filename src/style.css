@@ -59,7 +59,6 @@ input {
   justify-content: space-between;
   padding: 5px 15px;
   width: 100%;
-
   border-radius: 5px 5px 0 0;
   box-shadow: -1px 1px 5px -1px #dbd7d7bf;
   -webkit-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
@@ -77,10 +76,12 @@ input {
   -moz-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
 }
 
-.list li:nth-child(odd), .list li:nth-child(even){
+.list li:nth-child(odd),
+.list li:nth-child(even) {
   width: 98%;
   box-sizing: border-box;
 }
+
 .list li:nth-child(odd) {
   background: #3b4752;
   color: #fff;
@@ -91,7 +92,8 @@ input {
   color: #3b4752;
 }
 
-.add-title, .recent-title {
+.add-title,
+.recent-title {
   margin-left: 5px;
   color: #fff;
   box-sizing: border-box;

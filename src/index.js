@@ -50,7 +50,7 @@ const refreshScores = () => {
       displayGame.appendChild(gameList);
     });
   });
-}
+};
 
 refreshBtn.addEventListener('click', refreshScores);
 
