@@ -1,5 +1,6 @@
 import _ from 'lodash';// eslint-disable-line
 import './style.css';
+
 const displayGame = document.querySelector('.list');
 const form = document.querySelector('.form');
 const username = document.querySelector('.input-name');
@@ -50,4 +51,3 @@ refreshBtn.addEventListener('click', () => {
     });
   });
 });
-
