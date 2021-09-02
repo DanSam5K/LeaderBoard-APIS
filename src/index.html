@@ -11,8 +11,25 @@
       <h1>Leaderboard</h1>
     </header>
     <main class="justify-content">
-      <section id="update" class="scores"><h2>&nbsp;</h2></section>
-      <section id="add" class="add-scores"><h2>&nbsp;</h2></section>
+      <section id="update" class="scores">
+        <div class="title-container">
+          <h2 class="recent-title">Recent Scores</h2>
+          <button class="refresh-button">Refresh</button>
+        </div>
+        <div class="title-container">
+          <ul class="list"></ul>
+        </div>
+      </section>
+      <section id="add" class="add-scores">
+        <div class="title-container">
+          <h2 class="add-title">Add Your Score</h2>
+        </div>
+        <form class="form">
+          <input class="input-name" type="text" placeholder="Your Name" required>
+          <input class="input-score" type="number" placeholder="0" min="1" required>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </section>
     </main>
 </body>
 </html>
