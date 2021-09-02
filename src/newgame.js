@@ -14,7 +14,7 @@ const leaderBoard = () => {
   })
     .then((response) => response.json())
     .then((json) => json)
-      .catch((error) => console.error('Error:', error));// eslint-disable-line
+      .catch((error) => new Error ('Error:', error))
 };
 
 export default leaderBoard;

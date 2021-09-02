@@ -1,4 +1,4 @@
-import _ from 'lodash';// eslint-disable-line
+import _ from 'lodash';
 import './style.css';
 
 const displayGame = document.querySelector('.list');
@@ -7,7 +7,7 @@ const username = document.querySelector('.input-name');
 const userscore = document.querySelector('.input-score');
 const refreshBtn = document.querySelector('.refresh-button');
 
-const leaderData = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fOiEcJqrUPnT8bykVBXu/scores/';
+const leaderData = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/LoAHj9ubO8l2HuWQEMln/scores/';
 
 const postData = async (gamerName, gamerScore) => {
   const response = await fetch(leaderData, {
