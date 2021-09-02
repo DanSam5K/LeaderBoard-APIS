@@ -14,7 +14,7 @@ const leaderBoard = () => {
   })
     .then((response) => response.json())
     .then((json) => json)
-      .catch((error) => new Error ('Error:', error))
+    .catch((error) => new Error('Error:', error));
 };
 
 export default leaderBoard;
