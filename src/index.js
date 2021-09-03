@@ -38,7 +38,7 @@ const getData = async () => {
   return refreshJsonData;
 };
 
-refreshBtn.addEventListener('click', () => {
+const refreshScores = () => {
   getData().then((data) => {
     displayGame.innerHTML = '';
     data.result.forEach((data) => {
@@ -50,4 +50,8 @@ refreshBtn.addEventListener('click', () => {
       displayGame.appendChild(gameList);
     });
   });
-});
+};
+
+refreshBtn.addEventListener('click', refreshScores);
+
+window.onload = refreshScores;
