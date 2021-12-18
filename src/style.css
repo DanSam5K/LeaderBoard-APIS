@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background-color: #3b4752;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+li {
+  width: 70%;
+  background-color: white;
+}
+
+p {
+  padding: 10px 15px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -webkit-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -moz-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+.scores,
+.add-scores {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60vh;
+  margin: 40px;
+}
+
+.title-container {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -webkit-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -moz-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+}
+
+.list {
+  border: 1px solid #dbd7d7bf;
+  overflow-y: scroll;
+  height: 50vh;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -webkit-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -moz-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+}
+
+.list li:nth-child(odd),
+.list li:nth-child(even) {
+  width: 98%;
+  box-sizing: border-box;
+}
+
+.list li:nth-child(odd) {
+  background: #3b4752;
+  color: #fff;
+}
+
+.list li:nth-child(even) {
+  background: #fff;
+  color: #3b4752;
+}
+
+.add-title,
+.recent-title {
+  margin-left: 5px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.input-name,
+.input-score {
+  padding: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -webkit-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -moz-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+}
+
+.submit-button,
+.refresh-button {
+  width: 20%;
+  margin-left: auto;
+  margin-top: 2px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -webkit-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+  -moz-box-shadow: -1px 1px 5px -1px #dbd7d7bf;
+}
